@@ -26,6 +26,7 @@
               },
               backgroundImage: {
         'banner': "url('/images/header/banner.jpg')",
+        'cammeraMan':"url('/images/body/camera-man.jpg')"
       }
             }
           }
@@ -38,9 +39,9 @@
    <nav class="flex justify-between px-4 md:px-14 lg:px-28 font-bebas p-2 md:p-4 lg:p-5 absolute bg-white w-full">
         <div class="flex items-center">
             <img src="./images/favicon/film-camera.png" style="width: 40px; height: 40px; padding:2px" alt="">
-            <h3 class="text-3xl p-2">E Commerce</h3>
+            <h3 class="text-2xl md:text-3xl gap-1">E Commerce</h3>
         </div>
-        <ul class="flex space-x-4 text-lg">
+        <ul class="flex space-x-2 md:space-x-4 text-sm md:text-lg">
             <li>About Us</li>
             <li>Our Movies</li>
             <li>Services</li>
@@ -50,17 +51,32 @@
    <!-- navbar section end -->
    <!-- main section start  -->
    <main>
-        <section class="bg-banner bg-cover h-screen pt-24 text-white font-bebas flex items-center">
-            <div class="ml-20">
+        <section class="bg-banner bg-cover object-cover h-screen pt-24 text-white font-bebas flex items-center">
+            <div class="ml-5 md:ml-8 lg:ml-20">
                 <h3 >Movie production studio</h3>
-                <h2 class="text-5xl">Films MAde to</h2>
-                <h2 class="text-5xl text-yellow">Perfection</h2>
+                <h2 class="text-2xl md:text-3xl lg:text-5xl">Films MAde to</h2>
+                <h2 class="text-2xl md:text-3xl lg:text-5xl text-yellow">Perfection</h2>
                 <p class="font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus, 
                     luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                <button class="border px-4 py-2">Discover More</button>
+                <button class="mt-3 px-2 py-1 border lg:px-4 lg:py-2">Discover More</button>
             </div>
         </section>
    </main>
    <!-- main section end -->
+   <!-- about section start  -->
+        <div class="m-20 border-2 border-cyan-500 h-screen">
+            <div class="flex">
+                <div class="bg-cammeraMan bg-cover h-80 w-2/4 m-10 relative flex justify-center ">
+                    <h1 class="absolute bg-white bottom-0 border rounded-md px-4 py-2 -mb-6 text-bebas">23 YEARS of EXPERIENCE</h1>
+                </div>
+                <div class="text-bebas w-2/4 m-10">
+                    <p>ABOUT US</p>
+                    <h1>FIlming Experience</h1>
+                    <h1>Just Got better</h1>
+                    <p>Primis lobortis adipiscing imperdiet dis ultricies. Id commodo interdum fermentum pede dictumst ipsum. Erat sapien phasellus suspendisse natoque nulla leo ornare mi. Pretium rhoncus venenatis ante dignissim aliquet faucibus tempus etiam feugiat.</p><button class="mt-3 px-2 py-1 border lg:px-4 lg:py-2">Discover More</button>
+                </div>
+            </div>
+        </div>
+   <!-- about section end -->
 </body>
 </html>
